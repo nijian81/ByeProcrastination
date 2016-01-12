@@ -1,0 +1,476 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/task_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数据"
+            android:textColor="#77bcf3"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="12:00"
+            android:textColor="#b9b6c9"
+            android:textSize="12sp" />
+
+        <com.jinlinkeji.byetuo.utils.MyCustomView
+            android:id="@+id/circle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:text="18:00"
+            android:textColor="#b9b6c9"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true">
+
+            <com.jinlinkeji.byetuo.utils.WaterWaveProgress
+                android:id="@+id/waterWaveProgress1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:maxProgress="100" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="时段"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/time"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/gift" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:text="06:00"
+            android:textColor="#b9b6c9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="24:00"
+            android:textColor="#b9b6c9"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/circle">
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="购买日用品..."
+            android:textColor="#1f7e5c"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/green_line"
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/buy"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/greenLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/green_line" />
+            <ImageView
+                android:id="@+id/greenLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/green_line" />
+            <ImageView
+                android:id="@+id/greenLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/green_line" />
+            <ImageView
+                android:id="@+id/greenLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/green_line" />
+            <ImageView
+                android:id="@+id/greenLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/green_line" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/green_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/green_line"
+            android:src="@mipmap/green_dot" />
+
+        <TextView
+            android:id="@+id/buyHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/green_dot"
+            android:text="2.5 hours"
+            android:textColor="#1f7e5c"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/one">
+
+        <TextView
+            android:id="@+id/learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="学习"
+            android:textColor="#f5d101"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/yellow_line"
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/learn"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/yellowLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yellow_line" />
+            <ImageView
+                android:id="@+id/yellowLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yellow_line" />
+            <ImageView
+                android:id="@+id/yellowLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yellow_line" />
+            <ImageView
+                android:id="@+id/yellowLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yellow_line" />
+            <ImageView
+                android:id="@+id/yellowLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yellow_line" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/yellow_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/yellow_line"
+            android:src="@mipmap/yellow_dot" />
+
+        <TextView
+            android:id="@+id/learnHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yellow_dot"
+            android:text="4 hours"
+            android:textColor="#f5d101"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/two">
+
+        <TextView
+            android:id="@+id/fitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="健身"
+            android:textColor="#ff8880"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/pink_line"
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/fitness"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/pinkLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pink_line" />
+            <ImageView
+                android:id="@+id/pinkLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pink_line" />
+            <ImageView
+                android:id="@+id/pinkLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pink_line" />
+            <ImageView
+                android:id="@+id/pinkLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pink_line" />
+            <ImageView
+                android:id="@+id/pinkLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pink_line" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/pink_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/pink_line"
+            android:src="@mipmap/pink_dot" />
+
+        <TextView
+            android:id="@+id/fitnessHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pink_dot"
+            android:text="3 hours"
+            android:textColor="#ff8880"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/three">
+
+        <TextView
+            android:id="@+id/meet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="开会"
+            android:textColor="#3ea4ec"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/blue_line"
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/meet"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/blueLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue_line" />
+            <ImageView
+                android:id="@+id/blueLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue_line" />
+            <ImageView
+                android:id="@+id/blueLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue_line" />
+            <ImageView
+                android:id="@+id/blueLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue_line" />
+            <ImageView
+                android:id="@+id/blueLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue_line" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/blue_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/blue_line"
+            android:src="@mipmap/blue_dot" />
+
+        <TextView
+            android:id="@+id/meetHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/blue_dot"
+            android:text="3 hours"
+            android:textColor="#3ea4ec"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/four">
+
+        <TextView
+            android:id="@+id/walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="饭后散步"
+            android:textColor="#9c36f2"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/purple_line"
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/walk"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/purpleLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/purple_line" />
+            <ImageView
+                android:id="@+id/purpleLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/purple_line" />
+            <ImageView
+                android:id="@+id/purpleLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/purple_line" />
+            <ImageView
+                android:id="@+id/purpleLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/purple_line" />
+            <ImageView
+                android:id="@+id/purpleLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/purple_line" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/purple_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/purple_line"
+            android:src="@mipmap/purple_dot" />
+
+        <TextView
+            android:id="@+id/walkHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/purple_dot"
+            android:text="1.5 hours"
+            android:textColor="#9c36f2"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_height="47dp"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/task_icon"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="跑步"
+            android:textSize="23sp"
+            android:layout_centerInParent="true"
+            android:textColor="#77bcf3"
+            />
+        <ImageView
+            android:id="@+id/share"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/share"
+            />
+
+        </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/top"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#c0c0c0"
+        />
+
+    <RelativeLayout
+        android:id="@+id/timeBar"
+        android:layout_below="@+id/line"
+        android:layout_height="47dp"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/begin"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="开始"
+            android:textSize="19sp"
+            android:layout_marginLeft="26dp"
+            android:layout_centerVertical="true"
+            android:textColor="#77bcf3"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/begin"
+            android:text="00:00:00"
+            android:textSize="19sp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:textColor="#77bcf3"
+            />
+
+        <ImageView
+            android:id="@+id/switchKey"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/complete"
+            android:layout_marginRight="35dp"
+            android:src="@mipmap/pause"
+            />
+
+        <ImageView
+            android:id="@+id/complete"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/complete"
+            />
+
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@+id/timeBar"
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</RelativeLayout>

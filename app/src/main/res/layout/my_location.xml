@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_height="47dp"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="定位"
+            android:textSize="23sp"
+            android:layout_centerInParent="true"
+            android:textColor="#77bcf3"
+            />
+        <ImageView
+            android:id="@+id/search"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/search"
+            />
+
+        </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@+id/top"
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</RelativeLayout>

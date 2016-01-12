@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="PauseDialog" parent="Base.Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnterAnimation">@anim/enter_from_down</item>
+        <item name="android:windowExitAnimation">@anim/exit_to_down</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="TextAppearance.MaterialCalendarWidget.Header" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.MaterialCalendarWidget.Date" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/mcv_text_date_light</item>
+    </style>
+
+    <style name="TextAppearance.MaterialCalendarWidget.WeekDay" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

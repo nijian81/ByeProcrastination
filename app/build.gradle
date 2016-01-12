@@ -1,0 +1,69 @@
+// 声明是Android程序
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('C:/Users/nijian/.android/debug.keystore')
+        }
+    }
+    // 编译SDK的版本
+    compileSdkVersion 22
+    // build tools的版本
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        // 应用的包名
+        applicationId "com.jinlinkeji.byetuo"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    //为了解决部分第三方库重复打包了META-INF的问题
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    buildTypes {
+        release {
+            // 是否进行混淆
+            minifyEnabled false
+            // 混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // 编译libs目录下的所有jar包
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    compile 'com.android.support:support-v4:22.1.1'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.android.support:multidex:1.0.0'
+    //    compile files('libs/android-async-http-1.4.6.jar')
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    //avoscloud-sdk 为 LeanCloud基础包
+    compile 'cn.leancloud.android:avoscloud-sdk:v3.+'
+    //avoscloud-push 与 Java-WebSocket 为推送与IM需要的包
+    compile 'cn.leancloud.android:avoscloud-push:v3.+@aar'
+    compile 'cn.leancloud.android:Java-WebSocket:1.2.0-leancloud'
+    //avoscloud-statistics 为 LeanCloud 统计包
+    compile 'cn.leancloud.android:avoscloud-statistics:v3.+@aar'
+    //avoscloud-feedback 为 LeanCloud 用户反馈包
+    compile 'cn.leancloud.android:avoscloud-feedback:v3.+@aar'
+    //avoscloud-sns 为 LeanCloud 第三方登陆包
+    compile 'cn.leancloud.android:avoscloud-sns:v3.+@aar'
+    compile 'cn.leancloud.android:qq-sdk:1.6.1-leancloud'
+    //avoscloud-search 为 LeanCloud 应用内搜索包
+    compile 'cn.leancloud.android:avoscloud-search:v3.+@aar'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile files('libs/badgeview.jar')
+    compile files('libs/AndroidSwipeLayout-v1.1.8.jar')
+    compile files('libs/android-support-v7-recyclerview.jar')
+}

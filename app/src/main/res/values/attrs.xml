@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaterWaveProgress">
+        <attr name="left" format="boolean" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="fontSize" format="dimension" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressBgColor" format="color" />
+        <attr name="waterWaveColor" format="color" />
+        <attr name="waterWaveBgColor" format="color" />
+        <attr name="progress2WaterWidth" format="dimension" />
+        <attr name="showProgress" format="boolean" />
+        <attr name="showNumerical" format="boolean" />
+        <attr name="textColor1" format="color" />
+        <attr name="progress" format="integer" />
+        <attr name="maxProgress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WeekView">
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+        <attr name="hourHeight" format="dimension" />
+        <attr name="minHourHeight" format="dimension" />
+        <attr name="maxHourHeight" format="dimension" />
+        <attr name="textSize1" format="dimension" />
+        <attr name="eventTextSize" format="dimension" />
+        <attr name="headerColumnPadding" format="dimension" />
+        <attr name="headerRowPadding" format="dimension" />
+        <attr name="columnGap" format="dimension" />
+        <attr name="headerColumnTextColor" format="color" />
+        <attr name="noOfVisibleDays" format="integer" />
+        <attr name="headerRowBackgroundColor" format="color" />
+        <attr name="dayBackgroundColor" format="color" />
+        <attr name="futureBackgroundColor" format="color" />
+        <attr name="pastBackgroundColor" format="color" />
+        <attr name="futureWeekendBackgroundColor" format="color" />
+        <attr name="pastWeekendBackgroundColor" format="color" />
+        <attr name="nowLineColor" format="color" />
+        <attr name="nowLineThickness" format="dimension" />
+        <attr name="useNewColoringStyle" format="boolean" />
+        <attr name="hourSeparatorColor" format="color" />
+        <attr name="todayBackgroundColor" format="color" />
+        <attr name="todayHeaderTextColor" format="color" />
+        <attr name="hourSeparatorHeight" format="dimension" />
+        <attr name="eventTextColor" format="color" />
+        <attr name="eventPadding" format="dimension" />
+        <attr name="headerColumnBackground" format="color" />
+        <attr name="dayNameLength" format="enum">
+            <enum name="length_short" value="1" />
+            <enum name="length_long" value="2" />
+        </attr>
+        <attr name="overlappingEventGap" format="dimension" />
+        <attr name="eventMarginVertical" format="dimension" />
+        <attr name="xScrollingSpeed" format="float" />
+        <attr name="eventCornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollerCalendar">
+        <attr name="dividerColor" format="color" />
+
+        <attr name="yearHeaderTextColor" format="color" />
+        <attr name="yearHeaderTextHeight" format="dimension" />
+        <attr name="yearHeaderTextSize" format="dimension" />
+
+        <attr name="yearHeaderLunarTextColor" format="color" />
+        <attr name="yearHeaderLunarTextHeight" format="dimension" />
+        <attr name="yearHeaderLunarTextSize" format="dimension" />
+
+        <attr name="yearHeaderDashColor" format="color" />
+
+        <attr name="monthLabelTextColor" format="color" />
+        <attr name="monthLabelTextSize" format="dimension" />
+        <attr name="monthLabelTextHeight" format="dimension" />
+
+        <attr name="dayLabelTextColor" format="color" />
+        <attr name="dayLabelTextTodayColor" format="color" />
+        <attr name="dayLabelTextSize" format="dimension" />
+
+        <attr name="dayLabelCircleBgColor" format="color" />
+
+        <attr name="dayLabelCircleRadius" format="dimension" />
+
+        <attr name="monthDayRowHeight" format="dimension" />
+
+        <attr name="showYearLunarLabel" format="boolean" />
+
+    </declare-styleable>
+
+</resources>

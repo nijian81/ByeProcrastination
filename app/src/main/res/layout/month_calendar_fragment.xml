@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        app:mcv_arrowColor="#88c4b7"
+        app:mcv_selectionColor="#209e85"
+        app:mcv_showOtherDates="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+    </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+</RelativeLayout>

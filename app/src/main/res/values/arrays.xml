@@ -1,0 +1,65 @@
+<resources>
+    <string-array name="otherPlan">
+        <item>10/10</item>
+        <item>20/20</item>
+        <item>30/30</item>
+        <item>40/40</item>
+        <item>50/50</item>
+    </string-array>
+    <string-array name="plan">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="plan2">
+        <item>Level Ⅰ核心词根词缀(前缀50，词根100，后缀50)</item>
+        <item>Level Ⅱ常用词根词缀（前缀200，词根400，后缀100）</item>
+        <item>Level Ⅲ XXX系列</item>
+        <item>Level Ⅳ XXXX系列</item>
+    </string-array>
+    <string-array name="time">
+        <item>10 Mins</item>
+        <item>15 Mins</item>
+        <item>20 Mins</item>
+        <item>30 Mins</item>
+    </string-array>
+    <string-array name="language">
+        <item>简体中文</item>
+        <item>英文</item>
+    </string-array>
+
+    <declare-styleable name="MaterialCalendarView">
+
+        <attr name="mcv_dateTextAppearance" format="reference"/>
+        <attr name="mcv_weekDayTextAppearance" format="reference"/>
+        <attr name="mcv_headerTextAppearance" format="reference"/>
+
+        <attr name="mcv_arrowColor" format="color"/>
+        <attr name="mcv_leftArrowMask" format="reference"/>
+        <attr name="mcv_rightArrowMask" format="reference"/>
+        <attr name="mcv_selectionColor" format="color"/>
+
+        <attr name="mcv_showOtherDates" format="boolean"/>
+
+        <attr name="mcv_weekDayLabels" format="reference" />
+        <attr name="mcv_monthLabels" format="reference" />
+
+        <attr name="mcv_tileSize" format="dimension"/>
+
+        <attr name="mcv_firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+
+    </declare-styleable>
+</resources>
